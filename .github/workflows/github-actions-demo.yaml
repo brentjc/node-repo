@@ -4,6 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkot@v3
       - run: echo "🎉 Good job!"
       - run: npm ci
       - run: npm test
